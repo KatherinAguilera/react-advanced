@@ -4,7 +4,7 @@ export const Logo = props => (
   <Svg
     width={294.04}
     height={159.23}
-    viewBox='102.98 -4.615 294.04 159.23'
+    viewBox='102.98 -4.615 294.04 129.23'
     style={{
       background: '0 0'
     }}
@@ -17,8 +17,8 @@ export const Logo = props => (
         filterUnits='userSpaceOnUse'
         x='-100%'
         y='-100%'
-        width='300%'
-        height='300%'
+        width='200%'
+        height='200%'
       >
         <feFlood floodColor='#700f0f' result='flood1' />
         <feFlood floodColor='#fff' floodOpacity={0.5} result='flood2' />

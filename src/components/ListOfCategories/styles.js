@@ -1,11 +1,41 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { fadeIn } from '../styles/animation'
 
+export const Loader = styled.div`
+  display: flex;
+  justify-content:center;
+  align-center:center;
+  width: 75px;
+  height: 75px;
+  text-align:center;
+  &::after {
+    content: ' ';
+    text-align:center;
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid #DE530D;
+    border-color: #DE530D transparent #DE530D transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+`
 export const List = styled.ul`
   display: flex;
   overflow: scroll;
   width: 100%;
-  &.fixed {
+  margin-top: 10px;
+  ${props => props.fixed && css`
+  {
   ${fadeIn()}
     background: #fff;
     border-radius: 60px;
@@ -20,6 +50,7 @@ export const List = styled.ul`
     transform: scale(.5);
     z-index: 1;
   }
+  `}
 `
 
 export const Item = styled.li`
