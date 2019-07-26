@@ -9,6 +9,7 @@ export const ImgWrapper = styled.div`
   padding: 56.25% 0 0 0;
   position: relative;
   width: 100%; 
+  margin-top: 15px;
 `
 
 export const Img = styled.img`
@@ -32,4 +33,7 @@ export const Button = styled.button`
     padding:3px;
     color: #DE530D;
   }
+`
+export const Article = styled.article`
+  min-height: 200px;
 `
