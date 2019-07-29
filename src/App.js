@@ -4,7 +4,7 @@ import { Logo } from './components/Logo'
 
 import { Home } from './pages/Home'
 import { Detail } from './pages/Detail'
-
+import { NavBar } from './components/NavBar/index'
 import { Router } from '@reach/router'
 
 export const App = () => {
@@ -17,6 +17,7 @@ export const App = () => {
         <Home path='/pet/:categoryId' />
         <Detail path='/detail/:detailId' />
       </Router>
+      <NavBar />
     </div>
   )
 }
